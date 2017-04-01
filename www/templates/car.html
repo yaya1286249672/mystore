@@ -1,0 +1,21 @@
+<ion-view view-title="购物车">
+	<ion-content>
+		<ion-list>
+			<ion-item>
+				购物车
+			</ion-item>
+			<ion-item>
+				全选<input type="checkbox">
+			</ion-item>
+			<ion-item ng-repeat="frs in frstr">
+				<input type="checkbox">
+				<img style="width:50px;height:50px" src={{frs.gimg}} alt="" />
+				<span>{{frs.gname}}</span><br/>
+				<span>数量{{frs.gcount}}</span><br/>
+				<span style="margin-left:180px">单价：{{frs.gprice}}</span><br/>
+				<span style="color:#f00;margin-left:180px">小计{{frs.gcount*frs.gprice}}</span><br/>
+			</ion-item>
+		</ion-list>
+		<span>{{xiaoji}}<button id="xiaoji">结算</button></span>
+	</ion-content>
+</ion-view>

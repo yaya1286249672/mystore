@@ -1,0 +1,41 @@
+<ion-view view-title="首页">
+	<ion-content>
+		<div class="item-input-inset">
+			 <label class="item-input-wrapper">
+			    <i class="icon ion-ios-search placeholder-icon"></i>
+			    <input type="search" placeholder="Search">
+			 </label>
+		</div>
+		<ion-slide-box does-continue="true" auto-play="true" on-slide-changed="slideHasChanged(index)" slide-interval="1000" style="width:100vw;height:32vh;">
+		  <ion-slide>
+		    <div class="box pink"><img src="https://s2.mogucdn.com/mlcdn/c45406/170324_59gj5ed611bdb5lfehcd88lh1af20_750x360.jpg_800x9999.v1c7E.70.webp" alt="" /></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box pink"><img src="https://s10.mogucdn.com/mlcdn/c45406/170320_22026ebi4ji3ihil6h9e7ad9h5cg3_750x360.jpg_800x9999.v1c7E.70.webp" alt="" /></div>
+		  </ion-slide>
+		  <ion-slide on-slide-changed="slideHasChanged(index)">
+		    <div class="box pink"><img src="https://s2.mogucdn.com/mlcdn/c45406/170324_6le2c7d283dg7elbifh218g5g857i_750x360.jpg_800x9999.v1c7E.70.webp" alt="" /></div>
+		  </ion-slide>
+		  
+		  <ion-slide on-slide-changed="slideHasChanged(index)">
+		    <div class="box pink"><img src="https://s2.mogucdn.com/mlcdn/c45406/170324_842he93la0af0311ejb1lgii9d4kd_750x360.jpg_800x9999.v1c7E.70.webp" alt="" /></div>
+		  </ion-slide>
+		</ion-slide-box>
+		
+		<ion-list>
+			<ion-item>
+				<b>倒计时抢购</b>
+				<span id="djs"></span>
+			</ion-item>
+		</ion-list>
+		<!--滚动-->
+		<div>
+			<div>
+				<div class="lunbox" ng-repeat="lun in lunlist">
+					<a href={{lun.link}}><img class="lunimg" src={{lun.img}} alt="" /></a>
+					<span class="luntitle">{{lun.title}}</span>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

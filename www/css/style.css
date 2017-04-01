@@ -1,0 +1,22 @@
+/* Empty. Add your own CSS if you like */
+*{margin:0;padding:0;}
+a{text-decoration: none;color:#444;}
+.pink img{width:100vw;height:180px;}
+#mypink{background:"pink";}
+.my-slide{width:100vw;height:50px;display: flex;}
+.my-slide div{width:25%;height:50px;}
+.huabox ion-slide{width:100%;}
+.sortmethod span{display: inline-block;width:25vw;line-height:30px;text-align: center;}
+.sidesort{width:70px;background:#f9c;height:700px;}
+.mediv{width:40vw;float:left;border:3px solid #FF99CC;margin:0;margin-top:10px;padding:3px;height:264px;}
+.meimg{width:35vw;margin:0;}
+.metitle{width:35vw;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;height:20px;line-height:20px;margin:0;}
+.originalPrice{text-decoration: line-through;color:#f00;height:20px;line-height:20px;margin:0;}
+.meyuan{text-decoration: line-through;}
+.mexian{color:#f00;font-weight:bold;}
+.ks{display:inline-block;width:20px;height:20px;text-align:center;border:1px solid #000;line-height:20px;}
+.lunbox{width:25vw;height:130px;float:left;}
+.lunimg{width:25vw;height:100px;transition: all 1s;}
+.lunimg:hover{transform: rotateY(360deg);}
+.luntitle{font-size:12px;display:inline-block;width:80px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;height:20px;line-height:20px;margin:0;}
+
